@@ -52,38 +52,38 @@ Click on “Create”: <br />
 <br />
 To create our VM type in “Virtual Machine” in the search bar and under services click on “Virtual Machine”: <br />
 -Click on “+ Create” and select “Azure virtual machine” <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/ipxwCwm.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 For “Resource group *” select “labgroup”: <br />
 - For “Virtual machine name *” type in “labvm” <br />
 - For “Region *” select “(US) East US” <br />
 - For “Image *” select “Windows 10 Pro, version 21H2 – x64 Gen2” <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/q5QaLbs.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 Under “Administrative account” for “Username *” and “Password *” use the following credential: <br />
 - Username: labvm1 <br />
 - Password: xxxxxxx <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/3lRHNBy.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 Under licensing click the box that says “I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. *”: <br />
 -Click on “Review + create” <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/jHhkYhe.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 Click on “Create”: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/rJDACr3.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 Once deployment is complete, click on “Go to resource”: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/CTTUYJT.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 Under “Settings” click on “Networking” the network security group should populate: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
+<img src="https://i.imgur.com/sVTcFBT.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
+<img src="https://i.imgur.com/FNzopCM.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
 <br />
 <br />
 Implement “Just-In-Time” access to avoid brute force or password spray attack and only give access when needed and for authorized users: <br />
