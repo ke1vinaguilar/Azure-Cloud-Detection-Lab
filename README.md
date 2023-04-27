@@ -19,37 +19,292 @@ In this lab we're going to walk through how to create am Active Directory home l
 
 <h2>Diagram</h2>
 <p align="center">
-<img src="https://i.imgur.com/Jtqs9WI.png" height="80%" width="80%" alt="Nessus Lab Steps"/>
+<img src="https://i.imgur.com/Jtqs9WI.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
  </p>
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Download VMware Workstation Player: <br />
-<a href="https://www.vmware.com/content/vmware/vmware-published-sites/us/products/workstation-player/workstation-player-evaluation.html.html ">VMware Workstation Player</a>
+Create your Azure account: <br />
+<a href="https://azure.microsoft.com/en-us/free/">Azure</a>
 <br />
 <br />
-Download Windows 10 ISO File: <br />
-<a href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10 ISO</a>
+Go to https://portal.azure.com/: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Download Nessus Essentials Vulnerability Scanner: <br />
-<a href="https://www.tenable.com/products/nessus/nessus-essentials ">Nessus Essentials Vulnerability Scanner</a>
+In the search bar type in “resource groups” and under “Services” click on “Resource Groups”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Fill in the "Register for an Activation Code": <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Nessus Lab Steps"/>
+Click “Create”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Activation Code should be sent to your email: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Nessus Lab Steps"/>
+For “Resource group *” type in “labgroup” and for “Region *” select “(US) East US”: <br />
+-Click on “Review + create” <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Go to email and click on “Download Nessus”: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Nessus Lab Steps"/>
+Click on “Create”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Click on “View Downloads”: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Nessus Lab Steps"/>
+To create our VM type in “Virtual Machine” in the search bar and under services click on “Virtual Machine”: <br />
+-Click on “+ Create” and select “Azure virtual machine” <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+For “Resource group *” select “labgroup”: <br />
+- For “Virtual machine name *” type in “labvm” <br />
+- For “Region *” select “(US) East US” <br />
+- For “Image *” select “Windows 10 Pro, version 21H2 – x64 Gen2” <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Under “Administrative account” for “Username *” and “Password *” use the following credential: <br />
+- Username: labvm1 <br />
+- Password: xxxxxxx <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Under licensing click the box that says “I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. *”: <br />
+-Click on “Review + create” <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Click on “Create”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Once deployment is complete, click on “Go to resource”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Under “Settings” click on “Networking” the network security group should populate: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
+<br />
+<br />
+Implement “Just-In-Time” access to avoid brute force or password spray attack and only give access when needed and for authorized users: <br />
+-In the search bar type in “Microsoft Defender for Cloud” and under “Services select “Microsoft Defender for Cloud” <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Click on “Azure subscriptions”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Click on “Azure subscription 1”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Click on “Enable all”: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+Go back to the “Microsoft Defender for Cloud |Overview” and under “Cloud Security” click on “Workload protections”: <br />
+*Overall security posture in Azure, whats covered/ whats not covered) <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<br />
+<br />
+: <br />
+<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
