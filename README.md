@@ -19,7 +19,7 @@ In this lab we're going to walk through how to create am Active Directory home l
 
 <h2>Diagram</h2>
 <p align="center">
-<img src="https://i.imgur.com/Jtqs9WI.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/n3AqCcV.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
  </p>
 
 <h2>Program walk-through:</h2>
@@ -30,24 +30,24 @@ Create your Azure account: <br />
 <br />
 <br />
 Go to https://portal.azure.com/: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/CxArIyU.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 In the search bar type in “resource groups” and under “Services” click on “Resource Groups”: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/7WiSuFC.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 Click “Create”: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/LFFxkMO.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 For “Resource group *” type in “labgroup” and for “Region *” select “(US) East US”: <br />
 -Click on “Review + create” <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/e56sgUH.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 Click on “Create”: <br />
-<img src="https://i.imgur.com/5bVPho9.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
+<img src="https://i.imgur.com/Q1X6mOZ.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
 To create our VM type in “Virtual Machine” in the search bar and under services click on “Virtual Machine”: <br />
