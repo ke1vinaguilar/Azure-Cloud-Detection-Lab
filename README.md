@@ -1,6 +1,5 @@
 <h1>Azure Cloud Detection Lab</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
 In this lab we're going to walk through how to create am Active Directory home lab Environment using Oracle Virtual Box. Configuring and running this lab will definitely help develop your understanding of how active directory and windows networking works, so I'd highly recommnend running through it a couple times, ask questions where stuff is unclear, and eventually try to build it on your own without watching. Please let me know if you have any questions!
@@ -33,7 +32,7 @@ Go to https://portal.azure.com/: <br />
 <img src="https://i.imgur.com/CxArIyU.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-In the search bar type in “resource groups” and under “Services” click on “Resource Groups”: <br />
+In the search bar type in “resource groups” and under “Services” click on “Resource groups”: <br />
 <img src="https://i.imgur.com/7WiSuFC.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
@@ -50,7 +49,7 @@ Click on “Create”: <br />
 <img src="https://i.imgur.com/Q1X6mOZ.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-To create our VM type in “Virtual Machine” in the search bar and under services click on “Virtual Machine”: <br />
+To create the VM type in “Virtual Machine” in the search bar and under "Services" click on “Virtual Machine”: <br />
 -Click on “+ Create” and select “Azure virtual machine” <br />
 <img src="https://i.imgur.com/ipxwCwm.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
@@ -62,13 +61,13 @@ For “Resource group *” select “labgroup”: <br />
 <img src="https://i.imgur.com/q5QaLbs.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Under “Administrative account” for “Username *” and “Password *” use the following credential: <br />
+Under “Administrative account” type in your username and password: <br />
 - Username: labvm1 <br />
 - Password: xxxxxxx <br />
 <img src="https://i.imgur.com/3lRHNBy.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Under licensing click the box that says “I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. *”: <br />
+Under "Licensing" click the box that says “I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. *”: <br />
 -Click on “Review + create” <br />
 <img src="https://i.imgur.com/jHhkYhe.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
@@ -77,16 +76,17 @@ Click on “Create”: <br />
 <img src="https://i.imgur.com/rJDACr3.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Once deployment is complete, click on “Go to resource”: <br />
+Once the deployment is complete, click on “Go to resource”: <br />
 <img src="https://i.imgur.com/CTTUYJT.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Under “Settings” click on “Networking” the network security group should populate: <br />
+Under “Settings” click on “Networking”: <br />
+*the network security group should populate* <br />
 <img src="https://i.imgur.com/sVTcFBT.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
 <img src="https://i.imgur.com/FNzopCM.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
 <br />
 <br />
-Implement “Just-In-Time” access to avoid brute force or password spray attack and only give access when needed and for authorized users: <br />
+Implement “Just-In-Time” access to avoid brute force or password spray attack and only give access when needed for authorized users: <br />
 -In the search bar type in “Microsoft Defender for Cloud” and under “Services select “Microsoft Defender for Cloud” <br />
 <img src="https://i.imgur.com/D1eGg7P.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
