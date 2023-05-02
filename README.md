@@ -62,12 +62,10 @@ For “Resource group *” select “labgroup”: <br />
 <br />
 <br />
 Under “Administrative account” type in your username and password: <br />
-- Username: labvm1 <br />
-- Password: xxxxxxx <br />
 <img src="https://i.imgur.com/3lRHNBy.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Under "Licensing" click the box that says “I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. *”: <br />
+Under "Licensing" click the box that says “I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights.”: <br />
 -Click on “Review + create” <br />
 <img src="https://i.imgur.com/jHhkYhe.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
@@ -86,8 +84,8 @@ Under “Settings” click on “Networking”: <br />
 <img src="https://i.imgur.com/FNzopCM.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/> <br />
 <br />
 <br />
-Implement “Just-In-Time” access to avoid brute force or password spray attack and only give access when needed for authorized users: <br />
--In the search bar type in “Microsoft Defender for Cloud” and under “Services select “Microsoft Defender for Cloud” <br />
+-In the search bar type in “Microsoft Defender for Cloud” and under “Services select “Microsoft Defender for Cloud”: <br />
+* We're going to implement “Just-In-Time” access to avoid brute force or password spray attacks and only give access when needed for authorized users* <br />
 <img src="https://i.imgur.com/D1eGg7P.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
@@ -103,8 +101,8 @@ Click on “Enable all”: <br />
 <img src="https://i.imgur.com/1NG8WDq.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Go back to the “Microsoft Defender for Cloud |Overview” and under “Cloud Security” click on “Workload protections”: <br />
-*Overall security posture in Azure, whats covered/ whats not covered) <br />
+Go back to the “Microsoft Defender for Cloud | Overview” and under “Cloud Security” click on “Workload protections”: <br />
+*Overall security posture in Azure, whats covered/ whats not covered* <br />
 <img src="https://i.imgur.com/qdjGirv.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
@@ -140,7 +138,7 @@ Click on “Request access”: <br />
 <img src="https://i.imgur.com/MBGpYNe.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-If you go back to “Networking” under “Settings” you’ll see that a new has been created which implements that only traffic from the PC’s IP address is allowed: <br />
+If you go back to “Networking” under “Settings” you’ll see that a new rule has been created which implements that only traffic from the PC’s IP address is allowed: <br />
 <img src="https://i.imgur.com/ATXttiz.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
