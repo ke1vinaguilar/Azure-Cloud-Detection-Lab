@@ -306,9 +306,8 @@ Click on “Windows Logs” and then click on “Security”: <br />
 <img src="https://i.imgur.com/lDaiDBf.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
-Change the security policy which is just configuration settings for the security (determine what is
-logged and what isn’t) <br />
-- In the search bar type in “local security policy and click on “Virtual Security Policy” <br />
+- In the search bar type in “local security policy and click on “Virtual Security Policy”: <br />
+*We are going to change the security policy which is just configuration settings for the security to determine what is logged and what isn’t* <br />
 <img src="https://i.imgur.com/4JF9sj6.png" height="80%" width="80%" alt="Azure Cloud Detection Lab Steps"/>
 <br />
 <br />
