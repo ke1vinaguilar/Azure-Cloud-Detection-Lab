@@ -2,19 +2,18 @@
 
 
 <h2>Description</h2>
-In this lab we're going to walk through how to create am Active Directory home lab Environment using Oracle Virtual Box. Configuring and running this lab will definitely help develop your understanding of how active directory and windows networking works, so I'd highly recommnend running through it a couple times, ask questions where stuff is unclear, and eventually try to build it on your own without watching. Please let me know if you have any questions!
+In this lab we're going to configure and deploy Azure Resources such as Log Analytics Workspace, Virtual Machines, and Azure Sentinel. I will implementing Network and Virtual Machine Security Best Practices. I'll be utilizing data connectors to bring data into Sentinel for Analysis. Then, I'll be configuring Windows Security Policy Settings, utilizing KQL to query Logs, and write Custom Analytic Rules to detect Microsoft Security Events. Afterwards I'll be utilizing MITRE ATT&CK to map adversary tactics, techniques, detection, and mitigation procedures
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Oracle Virtual Box</b>
+- <b>KQL</b> 
+- <b>Microsoft Azure</b>
 
 <h2>Environments Used </h2>
 
 - <b>Windows 10 </b> (21H2)
-- <b>Servers 2019</b>
 
 <h2>Diagram</h2>
 <p align="center">
