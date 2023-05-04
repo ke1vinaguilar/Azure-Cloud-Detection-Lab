@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-In this lab we're going to configure and deploy Azure Resources such as Log Analytics Workspace, Virtual Machines, and Azure Sentinel. I will implementing Network and Virtual Machine Security Best Practices. I'll be utilizing data connectors to bring data into Sentinel for Analysis. Then, I'll be configuring Windows Security Policy Settings, utilizing KQL to query Logs, and write Custom Analytic Rules to detect Microsoft Security Events. Afterwards I'll be utilizing MITRE ATT&CK to map adversary tactics, techniques, detection, and mitigation procedures
+In this lab we're going to configure and deploy Azure Resources such as Log Analytics Workspace, Virtual Machines, and Azure Sentinel. I will be implementing Network and Virtual Machine Security Best Practices. I'll be utilizing data connectors to bring data into Sentinel for Analysis from the Windows Security Event Logs. Then, I'll be configuring Windows Security Policy Settings, utilizing KQL to query Logs, and write Custom Analytic Rules to detect Microsoft Security Events. Afterwards I'll be utilizing MITRE ATT&CK to map adversary tactics, techniques, detection, and mitigation procedures
 <br />
 
 
